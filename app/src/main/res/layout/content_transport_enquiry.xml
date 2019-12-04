@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ProjectTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOICE BASED TRANSPORT ENQUIRY SYSTEM"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#0038FF"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/welcomeUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome User!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_margin="5dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/commandsTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Commands:"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FF0000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Opern Transport \n Open Enquiry"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

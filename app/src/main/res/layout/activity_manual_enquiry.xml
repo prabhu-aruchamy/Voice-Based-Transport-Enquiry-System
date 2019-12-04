@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manualEnquiry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="7dp">
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/userid_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter User ID"
+            android:inputType="number"
+            android:imeOptions="actionNext" />
+
+
+        <EditText
+            android:id="@+id/b_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bus From"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/b_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bus To"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/b_timing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bus Timing"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_fetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetch Booking Details"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_fetchinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetch Booking Info"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/opt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUser">
+
+    <TextView
+        android:id="@+id/activity_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/alert_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Voice based Automatic Transport Enquiry System!"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/activity_heading"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/alert_text">
+
+
+        <EditText
+            android:id="@+id/newuser_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:imeOptions="actionNext"
+            android:textColorHint="#F76262"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="2dp"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/newuser_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:textColorHint="#F76262"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="2dp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/newuser_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#F76262"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="2dp"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"/>
+        <EditText
+            android:id="@+id/newuser_conformpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repeat Password"
+            android:textColorHint="#F76262"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="2dp"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"/>
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:text="REGISTER"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
